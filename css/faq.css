@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c6f4f5, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b1f0f3, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    animation: gradient 10s ease infinite;
+    background-size: 300%;
+    z-index: -1;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.faqh1 {
+
+    margin: 120px 0 30px;
+    text-align: center;
+    color: rgb(11, 12, 11);
+    font-family: monospace;
+    font-size: 60px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq {
+    background-color: transparent;
+    border-style: solid 1px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+.faq {
+
+    border-radius: 33px;
+    background: #d8d8d8;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.faq.active::after {
+    content: '\f086';
+    font-family: 'Font Awesome 5 Free';
+    color: rgb(36, 208, 24);
+    font-size: 150px;
+    position: absolute;
+    opacity: 0.15;
+    top: -20px;
+    left: 20px;
+    z-index: 0;
+    transition: all .3s ease-out;
+}
+
+.faq-title {
+    margin: 5px;
+}
+
+.faq-text {
+    display: none;
+}
+
+.faq.active .faq-text {
+    display: block;
+}
+
+.faq-toggle {
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    height: 25px;
+    width: 25px;
+    border-radius: 30%;
+    background-color: transparent;
+}
+
+.faq-toggle:focus {
+    outline: 0;
+}
+
+.faq-toggle .fa-times {
+    display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+    display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+}
+
+.faq.active .faq-toggle {
+    background-color: rgb(183, 206, 208);
+}
+
+/*Background*/
+.square {
+    position: absolute;
+    bottom: -100%;
+    background-color: rgb(244, 251, 251);
+    animation: boxes 10s infinite ease-in-out;
+
+
+}
+
+.square:nth-child(1) {
+    width: 3rem;
+    height: 3rem;
+    left: 7%;
+}
+
+.square:nth-child(2) {
+    width: 2rem;
+    height: 2rem;
+    left: 15%;
+    animation-delay: 2s;
+}
+
+.square:nth-child(3) {
+    width: 1rem;
+    height: 1rem;
+    left: 24%;
+    animation-delay: 3s;
+}
+
+.square:nth-child(4) {
+    width: 3rem;
+    height: 3rem;
+    left: 34%;
+    animation-delay: 2s;
+}
+
+.square:nth-child(5) {
+    width: 2rem;
+    height: 2rem;
+    left: 46%;
+    animation-delay: 4s;
+
+}
+
+.square:nth-child(6) {
+    width: 2rem;
+    height: 2rem;
+    left: 59%;
+    animation-delay: 2s;
+
+}
+
+.square:nth-child(7) {
+    width: 1rem;
+    height: 1rem;
+    left: 73%;
+    animation-delay: 6s;
+}
+
+.square:nth-child(8) {
+    width: 2rem;
+    height: 2rem;
+    left: 88%;
+    animation-delay: 2s;
+}
+
+.square:nth-child(9) {
+    width: 1rem;
+    height: 1rem;
+    left: 53%;
+    animation-delay: 6s;
+}
+
+.square:nth-child(10) {
+    width: 2rem;
+    height: 2rem;
+    left: 81%;
+    animation-delay: 4s;
+}
+
+@keyframes boxes {
+    0% {
+        bottom: -100%;
+    }
+
+    80% {
+        bottom: 80%;
+        opacity: 0.3;
+        transform: rotate(130deg);
+    }
+
+    100% {
+        bottom: 100%;
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+
+
+}
+
+/*Decoration*/
+
+.decoration {
+    width: 100px;
+    display: flex;
+    top:110px;
+    right:0px;
+    position:absolute;
+
+}
+
+.decoration span {
+    width: 10px;
+    height: 60px;
+    margin: 0 1px;
+    background-color: white;
+    animation: animation 1s ease-in-out infinite;
+}
+
+span:nth-child(1) {
+    background-color: red;
+    animation-delay: 0.2s;
+}
+
+.decoration span:nth-child(2) {
+    background-color: orange;
+    animation-delay: 0.3s;
+}
+
+.decoration span:nth-child(3) {
+    background-color: yellow;
+    animation-delay: 0.4s;
+}
+
+.decoration span:nth-child(4) {
+    background-color: palegreen;
+    animation-delay: 0.5s;
+}
+
+.decoration span:nth-child(5) {
+    background-color: rgb(111, 221, 238);
+    animation-delay: 0.6s;
+}
+
+.decoration span:nth-child(6) {
+    background-color: rgb(171, 87, 231);
+    animation-delay: 0.7s;
+}
+
+.decoration span:nth-child(7) {
+    background-color: rgb(235, 53, 235);
+    animation-delay: 0.8s;
+}
+
+@keyframes animation {
+    0% {
+        transform: scaleY(0.1);
+    }
+
+    35% {
+        transform: scaleY(1);
+    }
+
+    60%,
+    100% {
+        transform: scaleY(0.1);
+    }
+}

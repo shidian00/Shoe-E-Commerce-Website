@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif,Arial;  
+    padding:0px;
+    margin:0px;  
+}
+
+
+body{
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+.aboutUs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header-text {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+.header-image {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to top, rgba(38, 38, 38, 0.4), rgba(38, 38, 38, 0.3)), url(../images/aboutUsImg/about-us-cover.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.story-background {
+
+    padding: 50px;
+    margin: 50px;
+    width: 80%;
+    background-color: #eeeeee;
+    box-shadow: 5px 5px 18px #dfdfdf;
+    transform: skewX(15deg);
+}
+
+.story {
+    transform: skewX(-15deg);
+    display: flex;
+}
+
+.story-image {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin-right: 40px;
+    padding: 0;
+
+}
+
+.story-heading {
+    margin-bottom: 10px;
+}
+
+/* Contact Us */
+.contact-content {
+    display: flex;
+}
+
+.contact {
+    padding: 30px;
+    display: flex;
+}
+
+.contact .contact-text {
+font-size: 20px;
+}
+
+.pulse {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: chartreuse;
+    color: white;
+    justify-content: center;
+    position: relative;
+    top: -10px;
+    margin: 20px;
+    
+}
+
+.pulse i {
+    align-items: center;
+    line-height: 100px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+}
+
+.pulse :before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: chartreuse;
+    animation: pulse 2s linear infinite;
+}
+
+.pulse :after {
+    animation-delay: 0.5s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.mapouter {
+    margin-left:50px;
+    position: relative;
+    height: 500px;
+    width: 600px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 600px;
+    width: 1000px;
+}

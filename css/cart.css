@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif,Arial;  
+    padding:0px;
+    margin:0px;  
+}
+
+
+
+
+        .cartContainer {
+            position: relative;
+            top: 150px;
+            width: auto;
+            display: grid;
+            place-items: center;
+        }
+
+        table,
+        th,
+        td,
+        tr {
+            padding: 10px;
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        td {
+            height: auto;
+            width: auto;
+        }
+        td img{
+            height:100px;
+            width:100px;
+        }
+        .payment{
+            position:relative;
+            right:-220px;
+            top:10px;
+            width:80px;
+        }
+ 

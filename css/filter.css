@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif,Arial;  
+    padding:0px;
+    margin:0px;  
+}
+.filter {
+    position:relative;
+    display: flex;
+    background: rgb(61, 55, 55);
+    justify-content: center;
+    top:100px;
+    z-index:10;
+}
+
+.filter a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    cursor:pointer;
+}
+
+.filter a:hover {
+    color:tomato;
+    margin: 0 0.5rem;
+    transition: margin 0.5s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.5s;
+    background:black;
+}
+.back{
+    top:90px;
+    transition: top 0.5s;
+}

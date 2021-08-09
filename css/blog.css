@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif,Arial;  
+    padding:0px;
+    margin:0px;  
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-blog {
+    position:absolute;
+    top:100px;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 40px;
+    overflow: hidden;
+}
+
+.container-blog .header {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: url(../images/blogImg/header-image.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+    perspective: 100vh;
+    object-fit:cover;
+}
+
+.container-blog .header-text {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.container-blog .header-text h1 {
+    font-family: Nunito Sans;
+}
+
+.container-blog .logo {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+.container-blog .logo h1 {
+    display: flex;
+}
+
+.container-blog .logo h1 span {
+    font-size: 20px;
+    font-weight: 900;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    color: rgb(0, 170, 255);
+    margin: 6px;
+}
+
+.container-blog .logo h1 span:nth-child(1) {
+    animation-name: logo-animation;
+    animation-duration: 5s;
+    animation-delay: .1s;
+    animation-iteration-count: infinite;
+    /*animation: logo-animation 5s .1s infinte;*/
+}
+
+.container-blog .logo h1 span:nth-child(2) {
+    animation-name: logo-animation;
+    animation-duration: 5s;
+    animation-delay: .2s;
+    animation-iteration-count: infinite;
+    /*animation: logo-animation 5s .1s infinte;*/
+}
+
+.container-blog .logo h1 span:nth-child(3) {
+    animation-name: logo-animation;
+    animation-duration: 5s;
+    animation-delay: .3s;
+    animation-iteration-count: infinite;
+    /*animation: logo-animation 5s .1s infinte;*/
+}
+
+.container-blog .logo h1 span:nth-child(4) {
+    animation-name: logo-animation;
+    animation-duration: 5s;
+    animation-delay: .4s;
+    animation-iteration-count: infinite;
+    /*animation: logo-animation 5s .1s infinte;*/
+}
+
+.container-blog .logo h1 span:nth-child(5) {
+    animation-name: logo-animation;
+    animation-duration: 5s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    /*animation: logo-animation 5s .1s infinte;*/
+}
+
+.container-blog .logo h1 span:nth-child(6) {
+    animation-name: logo-animation;
+    animation-duration: 5s;
+    animation-delay: .6s;
+    animation-iteration-count: infinite;
+    /*animation: logo-animation 5s .1s infinte;*/
+}
+
+.container-blog .logo h1 span:nth-child(7) {
+    animation-name: logo-animation;
+    animation-duration: 5s;
+    animation-delay: .7s;
+    animation-iteration-count: infinite;
+    /*animation: logo-animation 5s .1s infinte;*/
+}
+
+.container-blog .logo h1 span:nth-child(8) {
+    animation-name: logo-animation;
+    animation-duration: 5s;
+    animation-delay: .8s;
+    animation-iteration-count: infinite;
+    /*animation: logo-animation 5s .1s infinte;*/
+}
+
+.container-blog .logo h1 span:nth-child(9) {
+    animation-name: logo-animation;
+    animation-duration: 5s;
+    animation-delay: .9s;
+    animation-iteration-count: infinite;
+    /*animation: logo-animation 5s .1s infinte;*/
+}
+
+@keyframes logo-animation {
+    0% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(0);
+    }
+
+    15% {
+        transform: translateY(-100%);
+    }
+
+    25% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.content p {
+    font-family: Nunito sans;
+    font-style: normal;
+    font-weight: 200;
+    text-align: justify;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.content h3 {
+    font-family: source-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    border-style: hidden;
+    border-radius: 15px 50px 30px 5px;
+    background-color: rgb(127, 212, 255);
+    border-color: aquamarine;
+    margin: 10px;
+    padding: 10px;
+}
+
+.author-info,
+.author-info p {
+    display: flex;
+    color: rgb(0, 0, 0);
+    padding: 0%;
+    border-style: solid;
+    border-radius: 25px 25px 25px 25px;
+    border-style: hidden;
+    background-color: rgb(243, 222, 243);
+    font-size: medium;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.content .tips {
+
+    text-decoration: none;
+    color: #000;
+    background: rgb(236, 236, 155);
+    box-sizing: border-box;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 25px 25px 25px 25px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.content .video-container{
+    text-align: center;
+}
+
+.share{
+    margin-top:5px;
+    font-size:25px;
+    color:orange;
+    transition:0.5s;
+    padding-left:5px;
+
+}
+
+.share:hover{
+    color:tomato;
+    transition:0.5s;
+
+}

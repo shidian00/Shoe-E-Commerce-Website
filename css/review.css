@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif,Arial;  
+    padding:0px;
+    margin:0px;  
+}
+
+.commentBlock {
+    background-color: transparent;
+    border-style: solid 1px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 30px;
+    position: relative;
+    background: #f0f3eb;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 1000px;
+    height: auto;
+    justify-content: center;    
+    font-weight:bold;
+    font-size:20px;
+
+}
+
+
+#reviewForm #reviewHead{
+    padding:50px 0px 10px 0px;
+    color:black;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+#reviewForm #submitButton{
+    margin-top:10px;
+    width:80px;
+    height:50px;
+    background-color:orange;
+    border-radius: 5px;
+    cursor:pointer;
+    color:white;
+    transition:0.5s;
+    border:none;
+}
+
+#reviewForm #submitButton:hover{
+background:tomato;
+transition:0.5s;
+
+}
+
+#reviewForm #textArea{
+    
+    resize:none;
+    height:100px;
+    width:500px;
+}

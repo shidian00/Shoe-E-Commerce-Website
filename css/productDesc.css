@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif,Arial;  
+    padding:0px;
+    margin:0px;  
+}
+.productDesc{
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+
+    top:95px;
+    position:relative;
+    padding:30px 30px 30px 200px;
+    margin-bottom:100px;
+}
+
+.gridContainer{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap:20px;
+    grid-row-gap:30px;
+}
+
+
+
+.gridContainer .button{
+    background:orange;
+    color:white;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer;
+    width:100px;
+    height: 50px;
+    transition:0.5s;
+    border: none;
+    visibility: visible;
+    position:relative;
+
+}
+
+.gridContainer .addOn input{
+    position:relative;
+    visibility:visible;
+    height:50px;
+    width:50px;
+}
+
+
+.gridContainer .button:hover{
+    background:tomato;
+    transition:0.5s;
+
+}
+
+
+.gridContainer .addOn h1{
+    margin:20px 0;
+    font-size:50px;
+    font-weight:bold;
+}
+
+.gridContainer .addOn h4{
+    margin:20px 0;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.gridContainer .addOn select{
+    display:block;
+    margin:20px 0;
+}
+
+.gridContainer .addOn .desc{
+    margin-top:20px;
+    font-size:20px;
+}
+
+
+/*The first grid contained the slide*/
+.gridContainer .slideShow  {
+    overflow:hidden;
+    max-height:600px;
+    max-width:500px;
+}
+
+/*The o o o o o*/
+.gridContainer .navigation label {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius:100%;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+/*Box containing the o o o o*/
+.gridContainer .navigation{
+    position:relative;
+    display:flex;
+    width:100%;
+    bottom:10%;
+    justify-content: center;
+}
+
+ /*The o o o o*/
+ .gridContainer .navigation label:hover {
+    background: grey;
+    transition:0.5s;
+
+}
+
+/*The hidden radio input */
+.gridContainer input{
+    position: absolute;
+    visibility: hidden;
+}
+
+
+/*Container of radio and the image*/
+.gridContainer .slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+    overflow:hidden;
+}
+/*Container of the image inside .slides*/
+.gridContainer .slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.gridContainer .slide img {
+    width: 100%;
+    height: 100%;
+    margin:auto
+}
+
+
+.gridContainer #img1:checked~.s1 {
+    margin-left: 0;
+}
+
+.gridContainer #img2:checked~.s1 {
+    margin-left: -20%;
+}
+
+
+.gridContainer ul{
+margin: 20px 0 0 20px;
+}
+
+.gridContainer ul li{
+    padding:5px;
+}
+
+
+.share{
+    font-size:50px;
+    color:orange;
+    transition:0.5s;
+
+}
+
+.share:hover{
+    color:tomato;
+    transition:0.5s;
+
+}
